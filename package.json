@@ -1,0 +1,47 @@
+{
+  "name": "wyvern",
+  "description": "Simple CLI to run wasm files",
+  "version": "1.0.0",
+  "author": "Rajat Sharma",
+  "bugs": {
+    "url": "https://github.com/rajatsharma/wyvern/issues"
+  },
+  "bin": {
+    "wyvern": "dist/src/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.14",
+    "ava": "^3.1.0",
+    "esbuild": "^0.14.11",
+    "eslint-config-rsh": "https://github.com/rajatsharma/eslint-config-rsh",
+    "typescript": "^4.8.2"
+  },
+  "eslintConfig": {
+    "extends": "rsh"
+  },
+  "engines": {
+    "node": ">=10.18.0"
+  },
+  "homepage": "https://github.com/rajatsharma/wyvern#readme",
+  "keywords": [
+    "editorconfig",
+    "eslint",
+    "repos",
+    "ts"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajatsharma/wyvern.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "esbuild src/index.ts --watch --outdir=dist",
+    "test": "ava"
+  },
+  "dependencies": {
+    "commander": "^9.4.0"
+  }
+}

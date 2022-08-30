@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true,
+    "lib": [
+      "ESNext",
+      "ESNext.BigInt","DOM"
+    ],
+    "resolveJsonModule": true,
+    "module": "commonjs",
+    "rootDir": ".",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ]
+}
