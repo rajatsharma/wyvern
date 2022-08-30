@@ -37,7 +37,8 @@
     "url": "git+https://github.com/rajatsharma/wyvern.git"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && pnpm run executable",
+    "executable": "echo '#!/usr/bin/env node' | cat - ./dist/src/index.js > temp && mv temp ./dist/src/index.js",
     "dev": "esbuild src/index.ts --watch --outdir=dist",
     "test": "ava"
   },
