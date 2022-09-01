@@ -9,7 +9,7 @@ program
   .description("Run wasm files")
   .argument("<filepath>", "Path to wasm file")
   .argument("[function]", "Name of function to run, default: main")
-  .option("-a, --args <args...>", "Package manager to use")
+  .option("-a, --args <args...>", "Args to pass into the function")
   .action(async (filepath: string, functionName = "main", { args }) => {
     const wasmBuffer = await fs.readFile(filepath);
     const wasmModule = await WebAssembly.instantiate(wasmBuffer);
