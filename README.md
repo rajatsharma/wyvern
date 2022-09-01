@@ -10,12 +10,12 @@ Usage: Wyvern <filepath> [function] [options]
 Run wasm files
 
 Arguments:
-  filepath              Path to wasm file
-  function              Name of function to run, default: main
+  filepath              path to wasm file
+  function              name of function to run, default: main
 
 Options:
   -V, --version         output the version number
-  -a, --args <args...>  Package manager to use
+  -a, --args <args...>  args to pass into the function
   -h, --help            display help for command
 ```
 
